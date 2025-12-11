@@ -1,122 +1,146 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zart Zurt <span style="color:#8B0000;">Ens</span><span style="color:#004d00;">titüsü</span> Sertifika</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zart Zurt Enstitüsü Sertifika Doğrulama</title>
+
+<style>
     body {
-      font-family: "Trebuchet MS", sans-serif;
-      background: #e8eef3;
-      margin: 0;
-      padding: 40px;
-      text-align: center;
-      color: #222;
+        font-family: Arial, sans-serif;
+        background: #f3f7f2;
+        color: #222;
+        text-align: center;
+        padding: 20px;
     }
-    .card {
-      background: white;
-      padding: 50px 35px;
-      border-radius: 18px;
-      max-width: 750px;
-      margin: auto;
-      box-shadow: 0 0 22px rgba(0,0,0,0.15);
-      position: relative;
-      border: 5px solid #004aad;
+
+    /* Çift çemberli logo */
+    .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        position: relative;
     }
-    .watermark {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-12deg);
-      font-size: 55px;
-      color: rgba(0,0,0,0.12);
-      font-weight: bold;
-      letter-spacing: 3px;
-      pointer-events: none;
-      text-transform: uppercase;
+
+    .outer-circle {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 6px solid #245c40; /* koyu yeşil */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
+
+    .inner-circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 4px solid #6d123b; /* bordo */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffffaa;
+        box-shadow: 0 0 10px #0003;
+    }
+
+    .inner-circle img {
+        height: 100%;
+    }
+
+    /* Yay şeklinde yazı */
+    .arc-text {
+        position: absolute;
+        top: -25px;
+        width: 260px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #245c40;
+        transform: rotate(-5deg);
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #0002;
+    }
+
+    /* Sertifika kutusu */
+    .certificate-box {
+        margin: 30px auto;
+        background: white;
+        width: 90%;
+        max-width: 600px;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px #0002;
+        position: relative;
+    }
+
     h1 {
-      color: #004aad;
-      margin-bottom: 5px;
-      font-size: 32px;
+        color: #6d123b;
+        margin-bottom: 5px;
     }
-    h3 {
-      margin-top: 0;
-      color: #444;
-      font-weight: 500;
+
+    .label {
+        font-weight: bold;
+        margin-top: 15px;
+        color: #245c40;
     }
-    .logo {
-      margin: 20px auto;
-      font-size: 26px;
-      font-weight: bold;
-      color: #004aad;
-      background: #dce7f9;
-      padding: 12px 20px;
-      border-radius: 10px;
-      display: inline-block;
-      border: 2px solid #004aad;
+
+    /* Silik bilgi metni */
+    .watermark-info {
+        margin-top: 20px;
+        font-size: 12px;
+        opacity: 0.55;
+        color: #333;
     }
-    p {
-      font-size: 18px;
-      margin: 10px;
+
+    /* Mühür */
+    .seal {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 180px;
+        opacity: 0.35;
+        transform: rotate(-18deg);
     }
-    .foot {
-      margin-top: 40px;
-      font-size: 12px;
-      opacity: 0.55;
-      line-height: 1.5;
-    }
-  </style>
+
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <div class="watermark">Zart Zurt</div>
 
-    <h1>Zart Zurt Enstitüsü</h1>
-    <h3>ISO 34987290857398567 (Kalite - Sağlık - Güvenlik - Ortaya Karışık Eğitimi)</h3>
+<div class="logo-wrapper">
+    <div class="arc-text">ZART ZURT ENSTİTÜSÜ</div>
 
-    <div class="logo-container">
-    <div class="logo-frame">
-        <img src="smiley-happy.gif" alt="ZZE Logo">
+    <div class="outer-circle">
+        <div class="inner-circle">
+            <img src="smiley-happy.gif" alt="ZZE Logo">
+        </div>
     </div>
 </div>
 
-<style>
-.logo-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+<div class="certificate-box">
+    <h1>SERTİFİKA</h1>
 
-.logo-frame {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #4e1f66;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffffffaa;
-    box-shadow: 0 0 15px #0003;
-}
+    <div class="label">Sertifika Adı:</div>
+    ISO 34987290857398567 <br>
+    (kalite, sağlık, güvenlik ortaya karışık eğitimi)
 
-.logo-frame img {
-    height: 100%;
-}
-</style>
+    <div class="label">Sertifika Alan:</div>
+    Enes MAZ
 
-    <p><strong>Sertifika Sahibi:</strong> Enes MAZ</p>
-    <p><strong>Tarih:</strong> 2-3 hafta önce falan</p>
+    <div class="label">Tarih:</div>
+    2–3 hafta önce falan
 
-    <p>Bu sertifika tamamen geçerlidir çünkü sertifika sahibi eğitimi aldığına dair yemin etmiştir.<br>
-    Yemin geçerlidir, çünkü neden olmasın.</p>
-
-    <div class="foot">
-      Zart Zurt Enstitüsü, hiç kimsenin sponsorluğu olmadan ve tamamen can sıkıntısıyla kurulmuş bir kuruluştur.<br>
-      Piyasada para karşılığı "sertifika" satan sitelerin sizi maddi kayba sürüklediğini göstermek amacıyla tasarlanmıştır.<br>
-      Ciddiyetsizlikte dünya lideri olma yolunda ilerliyoruz.
+    <div class="watermark-info">
+        - Zart Zurt Enstitüsü, tamamen mizah amaçlıdır.  
+        - Eğitim maddi ve manevi hiçbir şey vadetmez.  
+        - Sertifika sahibinin “aldım valla” şeklindeki yemini geçerlilik sayılmıştır.
     </div>
-  </div>
+
+    <!-- Mühür PNG -->
+    <img src="https://i.imgur.com/HhM2e0y.png" class="seal">
+</div>
+
 </body>
 </html>
